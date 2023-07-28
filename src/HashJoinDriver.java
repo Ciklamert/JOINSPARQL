@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class HashJoinDriver {
-    int a = 0;
+
     public ArrayList<ArrayList<Integer>> hashJoin(ArrayList<ArrayList<Integer>> table1, int index1, ArrayList<ArrayList<Integer>> table2,int index2){
         ArrayList<ArrayList<Integer>> newTable = new ArrayList<ArrayList<Integer>>();
         HashMap<Integer,ArrayList<ArrayList<Integer>>> hashTable = new HashMap<Integer,ArrayList<ArrayList<Integer>>>();

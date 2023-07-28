@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class HashJoinThread  extends Thread{
-    int a = 0;
+
     private HashJoinDriver hashJoinDriver;
     private ArrayList<ArrayList<Integer>> table1 = new ArrayList<ArrayList<Integer>>();
     private ArrayList<ArrayList<Integer>> table2 = new ArrayList<ArrayList<Integer>>();

@@ -44,7 +44,7 @@ public class Main {
 
         HashJoinDriver hashJoinDriver = new HashJoinDriver();
 
-        double N = 10.0;
+        double N = 100.0;
 
         double total = 0;
         for(double j = 0; j < N; j++){
@@ -56,7 +56,7 @@ public class Main {
             total += (end - begin) / 1000.0;
         }
         double averageTime = total/N;
-        System.out.println(averageTime);
+        System.out.println("Average run time of hash join over 100 runs: " + String.format("%.2f", averageTime));
 
         PartitionedHashJoinDriver partitionedHashJoinDriver = new PartitionedHashJoinDriver(16);
         double totalPHJ = 0;
@@ -69,7 +69,7 @@ public class Main {
             totalPHJ += (endPHJ - beginPHJ) / 1000.0;
         }
         double averageTimePHJ = totalPHJ/N;
-        System.out.println(averageTimePHJ);
+        System.out.println("Average run time of improved hash-join algorithm over 100 times: " + String.format("%.2f", averageTimePHJ));
 
 
 
@@ -85,7 +85,7 @@ public class Main {
             totalSMJ += (endSMJ - beginSMJ) / 1000.0;
         }
         double averageTimeSMJ = totalSMJ/N;
-        System.out.println(averageTimeSMJ);
+        System.out.println("Average run time of sort-merge join over 100 runs: " + String.format("%.2f", averageTimeSMJ));
 
     }
     public static int encode(String code){

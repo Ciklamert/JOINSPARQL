@@ -6,7 +6,6 @@ import java.util.HashMap;
 public class PartitionedHashJoinDriver {
 
     private int numPartitions;
-    int a = 0;
 
 
 
